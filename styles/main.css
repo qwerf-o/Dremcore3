@@ -42,8 +42,7 @@ body {
 }
 
 body {
-  /* overflow: hidden; */
-  position: relative; /* Add this to make body a positioning context */
+  position: relative;
 
   .background-overlay {
     position: absolute;
@@ -65,8 +64,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /* Add positioning context */
-  overflow: hidden; /* Prevent clouds from overflowing */
+  position: relative;
+  overflow: hidden;
 
   .clouds-container {
     position: absolute;
@@ -74,8 +73,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Below the heading */
-    pointer-events: none; /* Allow clicking through clouds */
+    z-index: 1;
+    pointer-events: none;
   }
 
   .cloud {
@@ -91,31 +90,31 @@ body {
   }
 
   .cloud-1 {
-    width: 800px; /* Increased from 500px */
-    height: 900px; /* Increased from 300px */
-    top: -10%; /* Moved up slightly */
-    left: -3%; /* Moved more to the left edge */
+    width: 800px;
+    height: 900px;
+    top: -10%;
+    left: -3%;
   }
 
   .cloud-2 {
-    width: 800px; /* Increased from 650px */
-    height: 520px; /* Increased from 390px */
-    top: -5%; /* Moved up to avoid overlap */
-    right: -4%; /* Adjusted position */
+    width: 800px;
+    height: 520px;
+    top: -5%;
+    right: -4%;
   }
 
   .cloud-3 {
-    width: 800px; /* Increased from 420px */
-    height: 600px; /* Increased from 250px */
-    bottom: 5%; /* Repositioned */
-    left: -5%; /* Adjusted position */
+    width: 800px;
+    height: 600px;
+    bottom: 5%;
+    left: -5%;
   }
 
   .cloud-4 {
-    width: 750px; /* Increased from 580px */
-    height: 490px; /* Increased from 350px */
-    bottom: 8%; /* Moved down to avoid overlap with cloud-2 */
-    right: -4%; /* Adjusted position */
+    width: 750px;
+    height: 490px;
+    bottom: 8%;
+    right: -4%;
   }
   h1 {
     font-family: var(--font-heading);
@@ -125,10 +124,10 @@ body {
     color: white;
     text-align: center;
     margin: 0;
-    /* text-shadow: 0 0 24px rgba(0, 0, 0, 0.5); */
+
     text-transform: uppercase;
-    z-index: 2; /* Ensure heading is above clouds */
-    position: relative; /* Add positioning context */
+    z-index: 2;
+    position: relative;
   }
 }
 
@@ -140,8 +139,6 @@ body {
     padding-bottom: 290px;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    /* align-content: flex-start; */
 
     .left {
       display: flex;
@@ -181,10 +178,10 @@ body {
   z-index: 0;
   width: 60%;
   opacity: 0.7;
-  pointer-events: none; /* Makes it non-interactive so it doesn't block elements below */
+  pointer-events: none; /* неинтерактивность*/
   transform: rotate(-5deg);
   left: 10%;
-  top: 900px; /* Adjust this value to position it nicely around warnings */
+  top: 900px;
   filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.3));
 }
 
@@ -297,7 +294,7 @@ body {
   }
 }
 
-/* Character Editor Drag-and-Drop Styles */
+/* Character  Styles */
 .element {
   cursor: grab;
 }
@@ -625,21 +622,21 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 250px; /* Position it above the footer */
-  z-index: 3; /* Make sure it's above other elements */
-  filter: blur(24px); /* Add the blur effect */
-  transition: filter 0.5s ease; /* Smooth transition for the hover effect */
-  max-width: 300px; /* Control the size of the balloon */
-  will-change: filter; /* Optimize for animation */
+  bottom: 250px;
+  z-index: 3;
+  filter: blur(24px);
+  transition: filter 0.5s ease;
+  max-width: 300px;
+  will-change: filter;
 }
 
 .balloon:hover {
-  filter: blur(0); /* Remove blur on hover */
+  filter: blur(0);
 }
 
 .footer {
   width: 100%;
-  position: relative; /* Add positioning context */
+  position: relative;
 
   .footer-bg,
   .footer-fg {
@@ -648,22 +645,22 @@ body {
   }
 
   .footer-fg {
-    bottom: 0; /* Position at bottom */
-    z-index: 2; /* Higher z-index to be above bg */
+    bottom: 0;
+    z-index: 2;
   }
 
   .footer-bg {
-    bottom: 190px; /* Position 190px from bottom */
+    bottom: 190px;
     z-index: 1;
   }
 
   .school-logo {
     position: absolute;
-    bottom: 48px; /* Position 48px from the bottom */
+    bottom: 48px;
     left: 50%;
     width: 200px;
-    transform: translateX(-50%); /* Center horizontally */
-    z-index: 3; /* Ensure it's above other footer elements */
+    transform: translateX(-50%);
+    z-index: 3;
   }
 
   .griby {
