@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Helvetica Regular";
-  src: url("/assets/fonts/helveticaRegular.otf") format("opentype");
+  src: url("../fonts/helveticaRegular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Helvetica Bold";
-  src: url("/assets/fonts/helveticaBold.otf") format("opentype");
+  src: url("../fonts/helveticaBold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monologue Rounded";
-  src: url("/assets/fonts/monologueRounded.otf") format("opentype");
+  src: url("../fonts/monologueRounded.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -80,7 +80,7 @@ body {
 
   .cloud {
     position: absolute;
-    background-image: url("/assets/img/cloud.png");
+    background-image: url("../img/cloud.png");
     background-size: contain;
     background-repeat: no-repeat;
     will-change: transform;
